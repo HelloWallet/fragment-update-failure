@@ -1,9 +1,9 @@
-{{model.someAttr}}
-{{model.anotherAttr}}
+Model Attr: {{model.someAttr}}<br/><br/>
 
-{{model.child.childAttr}}
-{{model.child.anotherChildAttr}}
+Children: <br/>
+{{#each model.theChildren as |child|}}
+    {{child.childAttr}} : 
+    {{child.anotherChildAttr}}<br/>
+{{/each}}
 
 <button {{action 'save'}}>save</button>
-
-<button {{action 'fix'}}>fix</button>
