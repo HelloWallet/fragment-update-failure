@@ -40,14 +40,23 @@ export default function() {
          test: {
              id: 1,
              someAttr: "server response test",
-             anotherAttr: false,
-             child: {
-                 childAttr: "server reponse child",
-                 anotherChildAttr: false
-             }
+             theChildren: [
+              {
+               childAttr: "server reponse child two",
+               anotherChildAttr: false
+              },
+              {
+               childAttr: "server reponse child one",
+               anotherChildAttr: false
+              },
+              {
+               childAttr: "server reponse child three",
+               anotherChildAttr: false
+              }
+             ]
          }
-     }
- })
+     };
+ });
 
   /*
     PUT shorthands
